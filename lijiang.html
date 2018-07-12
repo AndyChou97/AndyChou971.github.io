@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>丽江时光</title>
+  </head>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+  <script type="text/javascript" src="js\jquery-3.3.1.js"></script>
+  <script>
+    $(function(){
+      var timer = null;
+
+      $('.wx').mouseover(function(){
+        clearInterval(timer);
+        $('.weixin_img').show("slow");
+        $('.lb_bt').hide("slow");
+      });
+
+      $('.wx').mouseout(function(){
+        clearInterval(timer);
+        timer = setTimeout(function(){
+        $('.weixin_img').hide("slow");
+      },0);
+      });
+
+
+      $('.lb').mouseover(function(){
+        clearInterval(timer);
+        $('.lb_bt').show("slow");
+        $('.weixin_img').hide("slow");
+      });
+
+      $('.lb').mouseout(function(){
+        clearInterval(timer);
+        timer = setTimeout(function(){
+        $('.lb_bt').hide("slow");
+      },0);
+      });
+    });
+  </script>
+  <body style="background-color:#fff;">
+    <div class="top">
+			<ul>
+				<li class="t_l">
+					<p>
+						您好！欢迎访问<a href="index.html">重庆中国青年旅行社</a>
+					</p>
+				</li>
+				<li class="t_r">
+					<a href="">登陆</a>
+					<a href="">注册</a>
+					<a href="">订单查询</a>
+					<a href="">收藏本站</a>
+					<a href="">联系我们</a>
+					<a href="" id="a1">官方微博</a>
+          <div class="wx">
+            <a href="" id="a2">公众号</a>
+            <div class="weixin_img" style="display:none">
+              <img src="img/weixin.jpg" alt="">
+              “扫一扫” 关注微信
+            </div>
+          </div>
+					<div class="lb">
+						<a href=""><i id="i1" class="fa fa-navicon"></i>导航列表</a>
+						<div class="lb_bt" style="display:none">
+							<a href="gentuan.html">跟团游</a>
+							<a href="">自由行</a>
+							<a href="">三峡游</a>
+							<a href="">海岛游</a>
+							<a href="">限时特价</a>
+							<a href="">日本赏枫</a>
+							<a href="">川西红叶</a>
+							<a href="">定制游</a>
+							<a href="">问答</a>
+							<a href="">攻略</a>
+							<a href="">会员中心</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+    <div class="bn_nav">
+      <div class="bn_logo">
+        <a href="">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="gentuan.html">跟团游</a></li>
+        <li><a href="">自由行</a></li>
+        <li><a href="">三峡游</a></li>
+        <li><a href="">海岛游</a></li>
+        <li><a href="">限时特价</a></li>
+        <li><a href="">秋季红叶</a></li>
+        <li><a href="">日本赏枫</a></li>
+        <li><a href="">定制游</a></li>
+        <li><a href="">问答</a></li>
+        <li><a href="">攻略</a></li>
+      </ul>
+    </div>
+    <div class="lijiang_bn">
+
+    </div>
+    <div class="lijiang_ct">
+      <div class="ct_main">
+        <div class="ct_tittle">
+          <img src="img/title1.png" alt="">
+          <a href="">更多推荐</a>
+        </div>
+        <div class="ct_content">
+          <ul>
+            <li>
+              <a href=""><img src="img/lijiang1.jpg" alt=""></a>
+              <p>花香四季—昆明大理丽江泸沽湖双飞8日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">2100</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang2.jpg" alt=""></a>
+              <p>花香四季—昆明大理丽江双飞6日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">1450</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang3.jpg" alt=""></a>
+              <p>懒人行—昆明大理丽江双飞单卧6日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">2500</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang4.jpg" alt=""></a>
+              <p>南诏古韵—昆明大理丽江双飞6日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">860</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang5.jpg" alt=""></a>
+              <p>爱自由—丽江一地5日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">1450</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang6.jpg" alt=""></a>
+              <p>千古情—丽江、大理双飞5日游（纯玩）</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">2330</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ct_main">
+        <div class="ct_tittle">
+          <img src="img/title2.png" alt="">
+          <a href="">更多推荐</a>
+        </div>
+        <div class="ct_content">
+          <ul>
+            <li>
+              <a href=""><img src="img/lijiang1.jpg" alt=""></a>
+              <p>花香四季—昆明大理丽江泸沽湖双飞8日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">2100</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang2.jpg" alt=""></a>
+              <p>花香四季—昆明大理丽江双飞6日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">1450</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang3.jpg" alt=""></a>
+              <p>懒人行—昆明大理丽江双飞单卧6日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">2500</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang4.jpg" alt=""></a>
+              <p>南诏古韵—昆明大理丽江双飞6日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">860</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang5.jpg" alt=""></a>
+              <p>爱自由—丽江一地5日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">1450</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang6.jpg" alt=""></a>
+              <p>千古情—丽江、大理双飞5日游（纯玩）</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">2330</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ct_main">
+        <div class="ct_tittle">
+          <img src="img/title3.png" alt="">
+          <a href="">更多推荐</a>
+        </div>
+        <div class="ct_content">
+          <ul>
+            <li>
+              <a href=""><img src="img/lijiang1.jpg" alt=""></a>
+              <p>花香四季—昆明大理丽江泸沽湖双飞8日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">2100</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang2.jpg" alt=""></a>
+              <p>花香四季—昆明大理丽江双飞6日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">1450</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang3.jpg" alt=""></a>
+              <p>懒人行—昆明大理丽江双飞单卧6日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">2500</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang4.jpg" alt=""></a>
+              <p>南诏古韵—昆明大理丽江双飞6日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">860</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang5.jpg" alt=""></a>
+              <p>爱自由—丽江一地5日游</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">1450</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="img/lijiang6.jpg" alt=""></a>
+              <p>千古情—丽江、大理双飞5日游（纯玩）</p>
+              <div class="bn_price">
+                <span class="price1">￥</span>
+                <span class="price2">2330</span>
+                <span class="price1">起</span>
+                <span>
+                  <a href="" class="yuding">
+                    立即预定
+                  </a>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="banquan">Copyright © 2002-2017 重庆中国青年旅行社有限公司渝中分社 版权所有</div>
+    </div>
+  </body>
+</html>
